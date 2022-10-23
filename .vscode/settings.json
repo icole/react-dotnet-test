@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "bin/Release/net6.0/publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/5c869a78-2740-404f-bf79-6aaa1211a055/AppServices/subscriptions/5c869a78-2740-404f-bf79-6aaa1211a055/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/react-dotnet-test"
+}
