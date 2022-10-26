@@ -71,11 +71,11 @@ namespace react_dotnet_test.Data.Migrations
         {
           Id = table.Column<string>(type: "nvarchar(200)", nullable: false),
           Version = table.Column<int>(type: "int", nullable: false),
-          Created = table.Column<DateTime>(type: "nvarchar(200)", nullable: false),
+          Created = table.Column<DateTime>(type: "datetime2", nullable: false),
           Use = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: true),
           Algorithm = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-          IsX509Certificate = table.Column<bool>(type: "int", nullable: false),
-          DataProtected = table.Column<bool>(type: "int", nullable: false),
+          IsX509Certificate = table.Column<bool>(type: "bit", nullable: false),
+          DataProtected = table.Column<bool>(type: "bit", nullable: false),
           Data = table.Column<string>(type: "nvarchar(MAX)", nullable: false)
         },
         constraints: table =>
