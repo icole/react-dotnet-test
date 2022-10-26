@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace react_dotnet_test.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
